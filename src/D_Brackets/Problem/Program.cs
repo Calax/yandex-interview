@@ -33,17 +33,19 @@ namespace Problem
 
         public void Gen(int n, int oCount, int cCount, string str)
         {
-            if(str.Length == 2 * n){
+            if (str.Length == 2 * n)
+            {
                 writer.WriteLine(str);
                 return;
             }
 
-            if(oCount < n)
+            if (oCount < n)
             {
                 Gen(n, oCount + 1, cCount, str + "(");
             }
 
-            if(oCount > cCount){
+            if (oCount > cCount)
+            {
                 Gen(n, oCount, cCount + 1, str + ")");
             }
         }

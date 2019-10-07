@@ -20,7 +20,7 @@ namespace Tests
             var mergedDigits = Merger.Merge(lines);
 
             Assert.AreEqual(7, mergedDigits.Length);
-            
+
             var digits = mergedDigits.Values.ToArray();
             Assert.AreEqual(1, digits[0]);
             Assert.AreEqual(1, digits[1]);

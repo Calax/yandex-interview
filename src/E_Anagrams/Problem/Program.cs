@@ -9,7 +9,7 @@ namespace Problem
         {
             var s1 = Console.ReadLine();
             var s2 = Console.ReadLine();
-        
+
             var anagrams = AnagramDetector.AreAnagrams(s1, s2);
 
             Console.WriteLine(anagrams ? "1" : "0");
@@ -18,7 +18,7 @@ namespace Problem
 
     public static class AnagramDetector
     {
-        public static bool AreAnagrams (string s1, string s2)
+        public static bool AreAnagrams(string s1, string s2)
         {
             var dict = new Dictionary<char, int>();
 

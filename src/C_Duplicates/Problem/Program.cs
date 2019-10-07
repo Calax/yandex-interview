@@ -6,7 +6,6 @@ namespace Problem
     {
         private class ConsoleReader : IReader
         {
-
             public void Dispose() { }
 
             public int ReadNumber()
@@ -33,7 +32,7 @@ namespace Problem
             using (var writer = new ConsoleWriter())
             {
                 var calculator = new DuplicateCalculator(reader, writer);
-                calculator.WriteUnique(n);                
+                calculator.WriteUnique(n);
             }
         }
     }
